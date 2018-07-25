@@ -227,6 +227,30 @@
         
         
           
+          <li class="menu-item menu-item-about">
+    <a href="/about/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-user"></i> <br />About</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+    <a href="/tags/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />Tags</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+    <a href="/categories/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-th"></i> <br />Categories</a>
+  </li>
+        
+        
+        
+          
           <li class="menu-item menu-item-archives">
     <a href="/archives/" rel="section">
       <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />Archives</a>
@@ -343,7 +367,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2018-07-25 15:46:11" itemprop="dateModified" datetime="2018-07-25T15:46:11+08:00">2018-07-25</time>
+                <time title="Modified: 2018-07-25 16:00:53" itemprop="dateModified" datetime="2018-07-25T16:00:53+08:00">2018-07-25</time>
               
             
           </span>
@@ -396,31 +420,30 @@
       
         
           
-            <p>###环境配置</p>
-<p>在开始之前，我们需要检测电脑中是否安装以下环境，如果没有安装可以到下面的网站中自行安装：</p>
+            <h2 id="环境配置"><a href="#环境配置" class="headerlink" title="环境配置"></a>环境配置</h2><p>在开始之前，我们需要检测电脑中是否安装以下环境，如果没有安装可以到下面的网站中自行安装：</p>
 <ul>
 <li><a href="https://nodejs.org/en/" target="_blank" rel="noopener">Node.js</a></li>
 <li><a href="https://git-scm.com/" target="_blank" rel="noopener">Git</a></li>
 </ul>
 <p>如果是Linux系统的话，这里介绍一种更简单快捷的方式来安装环境，那就是<a href="https://brew.sh/" target="_blank" rel="noopener">Homebrew</a>。点击链接按照提示安装Homebrew。然后通过Homebrew进行安装我们所需要的环境配置。</p>
-<h4 id="安装git"><a href="#安装git" class="headerlink" title="安装git"></a>安装git</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install git</span><br></pre></td></tr></table></figure>
-<h4 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> brew link node</span><br><span class="line"><span class="meta">$</span> brew uninstall node</span><br><span class="line"><span class="meta">$</span> brew install node</span><br></pre></td></tr></table></figure>
+<h3 id="安装git"><a href="#安装git" class="headerlink" title="安装git"></a>安装git</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install git</span><br></pre></td></tr></table></figure>
+<h3 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> brew link node</span><br><span class="line"><span class="meta">$</span> brew uninstall node</span><br><span class="line"><span class="meta">$</span> brew install node</span><br></pre></td></tr></table></figure>
 <p>接着就可以进行安装Hexo了，很简单，一行命令。</p>
-<h4 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
-<h3 id="建站-amp-配置"><a href="#建站-amp-配置" class="headerlink" title="建站&amp;配置"></a>建站&amp;配置</h3><p>安装完环境之后，我们就要开始正式的建立网站了，执行以下命令，将网站存放在本地文件夹中：</p>
+<h3 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+<h2 id="建站-amp-配置"><a href="#建站-amp-配置" class="headerlink" title="建站&amp;配置"></a>建站&amp;配置</h2><p>安装完环境之后，我们就要开始正式的建立网站了，执行以下命令，将网站存放在本地文件夹中：</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> cd &lt;folder&gt;</span><br><span class="line"><span class="meta">$</span> hexo init &lt;folder&gt;</span><br><span class="line"><span class="meta">$</span> npm install</span><br></pre></td></tr></table></figure>
 <p>完成之后，会发现在选中的文件夹中生成了一系列文件，暂时有三个文件对我们游泳。</p>
-<h4 id="config-yml"><a href="#config-yml" class="headerlink" title="_config.yml"></a>_config.yml</h4><p>网站的配置信息在这里，我们可以进行参数的设置，来个性化网站。比如可以设置网站标题，副标题，名字等等：</p>
+<h3 id="config-yml"><a href="#config-yml" class="headerlink" title="_config.yml"></a>_config.yml</h3><p>网站的配置信息在这里，我们可以进行参数的设置，来个性化网站。比如可以设置网站标题，副标题，名字等等：</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"># Site</span><br><span class="line">title: </span><br><span class="line">subtitle:</span><br><span class="line">description: </span><br><span class="line">author: </span><br><span class="line">language: </span><br><span class="line">timezone:</span><br></pre></td></tr></table></figure>
-<h4 id="source"><a href="#source" class="headerlink" title="source"></a>source</h4><p>网站的内容在这里，打开source文件夹，会发现有一个 _posts已经存在，后续我们写的文章都会在这里。还可以在这里配置分类和标签。</p>
-<h4 id="themes"><a href="#themes" class="headerlink" title="themes"></a>themes</h4><p>网站的主题在这里，我们可以先把主题下载下来，存放在这里，然后通过配置参数来修改网站的主题。网站的主题也可以进行一些个性化操作。进入到具体的主题文件夹后打开 _config.yml文件进行相关配置。</p>
+<h3 id="source"><a href="#source" class="headerlink" title="source"></a>source</h3><p>网站的内容在这里，打开source文件夹，会发现有一个 _posts已经存在，后续我们写的文章都会在这里。还可以在这里配置分类和标签。</p>
+<h3 id="themes"><a href="#themes" class="headerlink" title="themes"></a>themes</h3><p>网站的主题在这里，我们可以先把主题下载下来，存放在这里，然后通过配置参数来修改网站的主题。网站的主题也可以进行一些个性化操作。进入到具体的主题文件夹后打开 _config.yml文件进行相关配置。</p>
 <p>这样一系列操作以后，我们的网站已经初步完成了，但是这个时候还是在本地，接下来很重要的一步就是发布到GitHub上，让我们在外网可以访问。</p>
-<h3 id="GitHub-Pages"><a href="#GitHub-Pages" class="headerlink" title="GitHub Pages"></a>GitHub Pages</h3><p>原本我们需要自己购买云服务，才能将网站部署上去，但是现在可以通过GitHub Pages，将我们的网站部署到GitHub上去，GitHub会给我们生产一个唯一的域名来访问网站。这是GitHub Pages的介绍和使用：</p>
+<h2 id="GitHub-Pages"><a href="#GitHub-Pages" class="headerlink" title="GitHub Pages"></a>GitHub Pages</h2><p>原本我们需要自己购买云服务，才能将网站部署上去，但是现在可以通过GitHub Pages，将我们的网站部署到GitHub上去，GitHub会给我们生产一个唯一的域名来访问网站。这是GitHub Pages的介绍和使用：</p>
 <ul>
 <li><a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a></li>
 </ul>
 <p>按照教程中的步骤很容易将你的GitHub个人网页配置好，但这时只是一个空的网页，接下来我们就要将我们本地的网站和这个网页链接到一起。</p>
-<h3 id="部署到GitHub"><a href="#部署到GitHub" class="headerlink" title="部署到GitHub"></a>部署到GitHub</h3><p>首先打开我们网站文件夹中的 _config.yml文件，拉到最下面，会发现有个deploy，在这里把我们上面配置好的个人网页地址设置一下，比如我自己的最终就是这样：</p>
+<h2 id="部署到GitHub"><a href="#部署到GitHub" class="headerlink" title="部署到GitHub"></a>部署到GitHub</h2><p>首先打开我们网站文件夹中的 _config.yml文件，拉到最下面，会发现有个deploy，在这里把我们上面配置好的个人网页地址设置一下，比如我自己的最终就是这样：</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https://github.com/DevinZhan/DevinZhan.github.io</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
 <p>我们还得安装一下<code>hexo-deployer-git</code>的环境依赖，支持git服务器</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
@@ -428,18 +451,18 @@
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> hexo clean</span><br><span class="line"><span class="meta">$</span> hexo g</span><br><span class="line"><span class="meta">$</span> hexo d</span><br></pre></td></tr></table></figure>
 <p>说明：先清理一下缓存文件和静态文件，然后生成静态文件(g是generate的简写)，最后部署网站到设置好的服务器上(d是deploy的简写)。</p>
 <p>这样我们再去刷新我们的GitHub个人网页，就会发现网站已经成功部署上去了，但是上面只有一篇hello world，我们该怎么发布文章呢？</p>
-<h3 id="发布文章"><a href="#发布文章" class="headerlink" title="发布文章"></a>发布文章</h3><p>在发布文章之前，先说一下如何设置分类和标签。</p>
-<h4 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h4><p>打开终端，进入到网站所在的文件夹，执行命令：</p>
+<h2 id="发布文章"><a href="#发布文章" class="headerlink" title="发布文章"></a>发布文章</h2><p>在发布文章之前，先说一下如何设置分类和标签。</p>
+<h3 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h3><p>打开终端，进入到网站所在的文件夹，执行命令：</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> hexo new page categories</span><br></pre></td></tr></table></figure>
 <p>然后我们会发现source文件夹中新增了一个categories文件夹，里面还有一个index.md文件，打开它，添加<code>type: &quot;categories&quot;</code>到内容中，添加后是这样的：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">title: categories</span><br><span class="line">date: 2018-07-24 17:27:41</span><br><span class="line">type: &quot;categories&quot;</span><br></pre></td></tr></table></figure>
 <p>保存并关闭。</p>
-<h4 id="标签"><a href="#标签" class="headerlink" title="标签"></a>标签</h4><p>打开终端，进入到网站所在的文件夹，执行命令：</p>
+<h3 id="标签"><a href="#标签" class="headerlink" title="标签"></a>标签</h3><p>打开终端，进入到网站所在的文件夹，执行命令：</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> hexo new page tags</span><br></pre></td></tr></table></figure>
 <p>同样的我们会发现source下生成了一个tags文件夹，打开里面的index.md文件，添加<code>type: &quot;tags&quot;</code>到内容中，添加后是这样的：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">title: categories</span><br><span class="line">date: 2018-07-24 17:27:41</span><br><span class="line">type: &quot;tags&quot;</span><br></pre></td></tr></table></figure>
 <p>保存并关闭。</p>
-<h4 id="发表内容"><a href="#发表内容" class="headerlink" title="发表内容"></a>发表内容</h4><p>分类和标签设置完成后，接下来我们可以发布一篇文章来测试一下，我们先删除掉source文件夹下的 _posts文件夹里的内容，然后通过命令生产一篇新的文章：</p>
+<h3 id="发表内容"><a href="#发表内容" class="headerlink" title="发表内容"></a>发表内容</h3><p>分类和标签设置完成后，接下来我们可以发布一篇文章来测试一下，我们先删除掉source文件夹下的 _posts文件夹里的内容，然后通过命令生产一篇新的文章：</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> hexo new &lt;title&gt;</span><br></pre></td></tr></table></figure>
 <p>括号中是需要发布文章的标题，比如我发布了一篇标题为welcome的文章，那么在 _posts文件夹里会出现一个welcome.md的文件，我们打开这个文件，为这个文件添加分类和标签，完成后是这样：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">title: Welcome</span><br><span class="line">date: 2018-07-24 17:29:58</span><br><span class="line">categories:</span><br><span class="line">- iOS</span><br><span class="line">tags:</span><br><span class="line">- Swift</span><br></pre></td></tr></table></figure>
@@ -447,7 +470,7 @@
 <p>完成标签和分类的选择之后就在下面写文章了，写完文章后，通过命令部署到服务器上，仍然是那三个：</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> hexo clean</span><br><span class="line"><span class="meta">$</span> hexo g</span><br><span class="line"><span class="meta">$</span> hexo d</span><br></pre></td></tr></table></figure>
 <p>然后去刷新GitHub个人网页，就会发现已经成功了。可能有些同学觉得默认的这个主题不是很好看，或者要进行一些个性化操作，接下来我们来说一下主题的配置。</p>
-<h3 id="主题"><a href="#主题" class="headerlink" title="主题"></a>主题</h3><p>前面我们说到，网站的所有主题都在themes文件夹下，默认的只有一个landscape，如果要变换主题，我们需要先去GitHub把相应的主题下载下来，比如我下载了next主题。打开终端，进入到本地网站文件夹下，执行命令：</p>
+<h2 id="主题"><a href="#主题" class="headerlink" title="主题"></a>主题</h2><p>前面我们说到，网站的所有主题都在themes文件夹下，默认的只有一个landscape，如果要变换主题，我们需要先去GitHub把相应的主题下载下来，比如我下载了next主题。打开终端，进入到本地网站文件夹下，执行命令：</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> git clone https://github.com/theme-next/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure>
 <p>完成之后我们就会发现themes文件夹下多了一个next文件夹，这个时候我们要使用next主题就需要去根目录的 _config.yml文件中进行配置了，打开 _config.yml，进行修改：</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">theme: next</span><br></pre></td></tr></table></figure>
@@ -563,6 +586,15 @@
           
 
           
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  <a href="https://github.com/DevinZhan" target="_blank" title="GitHub"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                  
+                </span>
+              
+            </div>
+          
 
           
           
@@ -606,15 +638,9 @@
 
 
 
-  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> v3.7.1</div>
 
 
 
-  <span class="post-meta-divider">|</span>
-
-
-
-  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://theme-next.org">NexT.Muse</a> v6.3.0</div>
 
 
 
