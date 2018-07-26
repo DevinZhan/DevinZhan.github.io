@@ -13,3 +13,4 @@ Disallow: /vendors/
 Disallow: /fancybox/
 
 Sitemap: https://devinzhan.top/sitemap.xml
+Sitemap: https://devinzhan.top/baidusitemap.xml
